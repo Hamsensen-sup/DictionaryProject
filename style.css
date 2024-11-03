@@ -1,0 +1,103 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f7fa;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container styles */
+.search-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.word-title {
+    font-size: 2rem;
+    color: #0077cc;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Input styles */
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Button styles */
+.submit-btn {
+    padding: 12px;
+    width: 100%;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #005fa3;
+}
+
+/* Word and definition container */
+.word-container {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Part of speech styling */
+.part-of-speech {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+/* Definition styling */
+.words {
+    padding-left: 2rem;
+    color: #333;
+    line-height: 1.5;
+}
+.word{
+    text-align: left;
+}
