@@ -52,5 +52,11 @@ const fetchApi = async () => {
 const submit = document.getElementById("submit-button")
 submit.addEventListener("click", fetchApi)
 
-// const inputEl = document.getElementById("input-element")
-// inputEl.addEventListener("keyup", fetchApi)
+
+
+const inputEl = document.getElementById("input-element")
+inputEl.addEventListener("keyup", (event) => {
+    if (event.key === "Enter") {
+        fetchApi()
+    }
+})
