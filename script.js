@@ -3,8 +3,20 @@ const fetchApi = async () => {
     // const outputEl = document.getElementById("output-element")
     const word = document.getElementById("word")
     word.textContent = ""
+
+    if(inputEl.value === ""){
+        word.textContent = "Please type a word :>"
+        return
+    }
+
     try{
         const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${inputEl.value}`)
+
+        if (!response.ok) {
+            word.textContent = "Word not found :<"
+            return
+        }
+
         const json = await response.json()
 
         json.forEach((element, index) => {
@@ -39,3 +51,6 @@ const fetchApi = async () => {
 
 const submit = document.getElementById("submit-button")
 submit.addEventListener("click", fetchApi)
+
+// const inputEl = document.getElementById("input-element")
+// inputEl.addEventListener("keyup", fetchApi)
